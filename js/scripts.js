@@ -1,11 +1,13 @@
 const btnAdd = document.querySelector('#btnAdd');
 const btnRemov = document.querySelector('#btnRemov');
+const btnFeito = document.querySelector('#btnFeito');
 const inputTxt = document.getElementById('textoDeTarefa');
 
 
 
 const lista = document.getElementById('lista');
 const listaPrioridade = document.getElementById('prioridade');
+const listaFeitos = document.getElementById('lista-feitos');
 
 
 const checkBoxPrioridade = document.getElementById('cb-prioridade');
@@ -33,11 +35,11 @@ btnAdd.addEventListener('click', function() {
         span.textContent = 'Você não digitou nada'
     } else {
         if (checkBoxPrioridade.checked === true) {
-            ps.classList.add('prioridade');
+            div.classList.add('prioridade');
             listaPrioridade.appendChild(div);
             
         } else if (checkBoxUrgente.checked === true) {
-            ps.classList.add('urgente')
+            div.classList.add('urgente')
             listaPrioridade.appendChild(div);
 
         } else {
@@ -48,6 +50,7 @@ btnAdd.addEventListener('click', function() {
     checkBoxPrioridade.checked = false;
     checkBoxUrgente.checked = false;
     inputTxt.value = ''
+    span.textContent = ''
     }
 
     
@@ -64,4 +67,15 @@ btnRemov.addEventListener('click', function() {
     });
 });
 
-
+btnFeito.addEventListener('click', function() {
+    const todasAsDivs = document.querySelectorAll('.divList');
+    todasAsDivs.forEach(function(div) {
+        const checkbox = div.querySelector('input[type="checkbox"]');
+        
+        if(checkbox.checked === true) {
+            listaFeitos.appendChild(div)
+            div.classList.add('feito')
+        }
+        checkbox.checked = false
+    })
+})

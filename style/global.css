@@ -48,12 +48,15 @@ main {
     background-color: var(--backGround-color);
 }
 
-checkbox /
+/* checkbox */
 
 .feito {
-    text-decoration: line-through;
-    opacity: 0.6;
     background-color: var(--success-color);
+}
+
+.feito p {
+    text-decoration: line-through;
+    color: var(--text-primary);
 }
 
 .prioridade {
@@ -62,10 +65,18 @@ checkbox /
     background-color: var(--warning-color);
 }
 
+.prioridade p {
+    color: black;
+}
+
 .urgente {
     color: black;
     
     background-color: var(--danger-color);
+}
+
+.urgente p {
+    color: black;
 }
 
 section {
