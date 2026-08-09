@@ -1,0 +1,50 @@
+:root {
+  /* Cores base (suas) */
+  --backGround-color: #191919;
+  --secundary-color: #252427;
+
+  /* Superfícies extras */
+  --card-color: #2d2c30;      /* fundo de cada item da lista */
+  --border-color: #3a393e;    /* bordas sutis entre itens */
+
+  /* Texto */
+  --text-primary: #f2f2f2;    /* texto principal, alto contraste */
+  --text-secondary: #a8a8ac;  /* texto secundário, datas, labels */
+  --text-muted: #6f6e73;      /* texto apagado, tarefas concluídas */
+
+  /* Cor de destaque (accent) */
+  --accent-color: #7c5cff;    /* botões, links, checkbox marcado */
+  --accent-hover: #9377ff;    /* hover do accent */
+
+  /* Estados de tarefa */
+  --success-color: #4ade80;   /* tarefa concluída */
+  --warning-color: #facc15;   /* prioridade média */
+  --danger-color: #f87171;    /* prioridade alta / urgente */
+
+  /* Interações */
+  --hover-bg: #323034;        /* fundo ao passar o mouse num item */
+  --focus-ring: #7c5cff66;    /* contorno de foco em inputs (com transparência) */
+
+  /* Espaçamento e forma (opcional, mas ajuda a manter consistência) */
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--text-secondary);
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background-color: var(--backGround-color);
+}
+

@@ -1,0 +1,43 @@
+#lista-container {
+    background-color: var(--secundary-color);
+    height: 600px;
+    border: var(--border-color) solid 1px;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    width: 400px;
+}
+
+.container-btn {
+    display: flex;
+}
+
+.container-btn button:nth-child(1) {
+    margin-right: 0.5rem;
+}
+
+h2 {
+    font-weight: 500;
+    color: azure;
+    margin-bottom: 0.8rem;
+}
+
+input, button {
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    padding: 8px;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+    color: var(--hover-bg);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
