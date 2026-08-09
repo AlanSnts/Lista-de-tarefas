@@ -54,4 +54,14 @@ btnAdd.addEventListener('click', function() {
 });
 
 
+btnRemov.addEventListener('click', function() {
+    const todaAsDivs = document.querySelectorAll('.divList');
+    todaAsDivs.forEach(function(div) {
+        const checkbox = div.querySelector('input[type="checkbox"]')
+        if(checkbox.checked === true) {
+            div.remove();
+        }
+    });
+});
+
 
