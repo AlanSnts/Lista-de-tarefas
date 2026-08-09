@@ -15,19 +15,44 @@
             <header>
 
                 <h2>Lista de afazeres</h2>
-                <input type="text" placeholder="Escreva a tarefa">
+                <input id="textoDeTarefa" type="text" placeholder="Escreva a tarefa">
                 <div class="container-btn">
-                    <button type="button">Adicionar</button>
-                    <button type="button">Remover</button>
+                    <button id="btnAdd" type="button" onclick="add">Adicionar</button>
+                    <button id="btnRemov" type="button" onclick="remov">Remover</button>
+                    <button id="btnFeito" type="button">Feito</button>
+                    
+                </div>
+
+                <div id="input-prioridade">
+                    <input id="cb-prioridade" name="prioridade" type="checkbox"><p>Prioridade</p>
+                    <input id="cb-urgente" name="urgente" type="checkbox"><p>Urgente</p>
                 </div>
 
             </header>
+            <div class="avisos" ><div><p>Avisos: </p><span id="spanDeAvisos"></span></div><div>Feito/Remover</div></div>
+            <section class="categoria-listas">
+            
+                <div id="lista">
+                    <h4>Tarefaz não feitas</h4>
 
-            <div id="lista">
-                <p>oi</p>
-            </div>
+                </div>
+                
+                <div id="prioridade">
+                    <h4>Tarefas de prioridade/ urgente</h4>
+
+                </div>
+                    
+                <div id="lista-feitos">
+                    <h4>Tarefas concluídas</h4>
+
+                </div>
+
+            </section >
+                
+
 
         </div>
     </main>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

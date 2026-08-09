@@ -35,7 +35,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
     color: var(--text-secondary);
 }
@@ -48,3 +48,31 @@ main {
     background-color: var(--backGround-color);
 }
 
+checkbox /
+
+.feito {
+    text-decoration: line-through;
+    opacity: 0.6;
+    background-color: var(--success-color);
+}
+
+.prioridade {
+    
+    color: black;
+    background-color: var(--warning-color);
+}
+
+.urgente {
+    color: black;
+    
+    background-color: var(--danger-color);
+}
+
+section {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 370px;
+}
